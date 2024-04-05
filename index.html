@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TSP5ZN9T');</script>
-<!-- End Google Tag Manager -->
-	
 
 <title>Page Title</title>
 <meta charset="UTF-8">
@@ -21,12 +13,26 @@ body {
 
 </head>
 <body>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-<h1>My Website</h1>
-<p>A website created by me.</p>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSP5ZN9T"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+			embeddedservice_bootstrap.init(
+				'00D0D000000Cp8B',
+				'CSA_NGC_North_America_Messaging_Support',
+				'https://jlr-360--gvecqa1.sandbox.my.site.com/ESWCSANGCNorthAmerica1709271250152',
+				{
+					scrt2URL: 'https://jlr-360--gvecqa1.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://jlr-360--gvecqa1.sandbox.my.site.com/ESWCSANGCNorthAmerica1709271250152/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 </body>
+
 </html>
